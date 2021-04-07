@@ -1,0 +1,44 @@
+{
+  "name": "Discord",
+  "description": "Discord Bot",
+  "version": "1.0.0",
+  "author": "David Krajewski (with modifications by Greenlio)",
+  "dependencies": {
+    "antd": "^3.11.0",
+    "axios": "^0.21.1",
+    "body-parser": "^1.19.0",
+    "concurrently": "^4.1.1",
+    "discord.js": "^11.4.2",
+    "express": "^4.17.1",
+    "gatsby": "^2.10.5",
+    "gatsby-image": "^2.0.20",
+    "gatsby-plugin-manifest": "^2.0.9",
+    "gatsby-plugin-offline": "^2.0.16",
+    "gatsby-plugin-react-helmet": "^3.0.2",
+    "gatsby-plugin-sharp": "^2.2.1",
+    "gatsby-source-filesystem": "^2.1.1",
+    "gatsby-transformer-sharp": "^2.1.8",
+    "lowdb": "^1.0.0",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-helmet": "^5.2.0"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop | node ./src/scripts/runDiscord.js | node ./src/scripts/localApi.js",
+    "start": "concurrently \"gatsby develop\" \"node ./src/scripts/runDiscord.js\" \"node ./src/scripts/localApi.js\"",
+    "format": "prettier --write \"src/**/*.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "prettier": "^1.15.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kraj011/DiscordAuthBotV2/"
+  }
+}

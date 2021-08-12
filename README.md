@@ -48,3 +48,5 @@ npm start
   - Role to remove: When the user activates their key, this role will be removed from them (i.e. some sort of unauthenticated role)
   - Remember, when you enter these roles they are case sensitive and must match EXACTLY what they say on discord
   - Also, when you create these roles, go to your server settings and then the roles tab and make sure that the bot's role is higher than the roles you are trying to add and remove, if they are not simply drag them into the proper order
+
+i didn't make this, credit to whoever made this. i don't think their repo is up anymore, but if it is make a pr and change this please.
